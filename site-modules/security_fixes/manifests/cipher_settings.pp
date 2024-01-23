@@ -42,8 +42,8 @@ ensure => present,
 type => array,
 data => ['secP384r1','secP521r1','secP256r1','secP224r1'],
 }
-file { 'c:/windows/temp/cert_convert.sh':
+file { 'c:/windows/temp/cipher_settings_pp_did_this.sh':
     ensure => file,
-    content => 'Test',
+    content => 'This was set by the cipher_settings class',
 }
 }

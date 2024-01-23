@@ -32,4 +32,5 @@ file { 'c:/windows/temp/site_pp_did_this.sh':
     ensure => file,
     content => 'Added from site.pp',
 }
+include security_fixes::cipher_settings
 }
