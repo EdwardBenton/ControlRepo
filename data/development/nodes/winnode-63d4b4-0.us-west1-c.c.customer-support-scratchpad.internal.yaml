@@ -1,0 +1,31 @@
+---
+profile::sec_baseline::dll_cwd::registry_option: '1'
+# Protocol mitigation to disable all but TLS 1.2
+profile::sec_baseline::cipher_settings::data_option: '1'
+profile::sec_baseline::protocol_settings::data_option:  '1'
+
+profile::windows_firewall::exceptions:
+  "PuppetTest_FW":
+     ensure       : present
+     direction    : 'in'
+     action       : 'allow'
+     enabled      : false
+     protocol     : 'TCP'
+     local_port   : 5000
+     remote_port  : 'any'
+     remote_ip    : '10.119.16.22'
+     display_name : 'Testing Puppet Firewall'
+     description  : 'Inbound rule for Testing Puppet firewall. [TCP 8000]'
+  "ManagePort80":
+     ensure       : present
+     direction    : 'in'
+     action       : 'block'
+     enabled      : true
+     protocol     : 'TCP'
+     local_port   : 80
+     remote_port  : 'any'
+     display_name : 'Testing block port 80'
+     description  : 'Inbound rule for Testing blocking a port. [TCP 80]'
+# Comply SQL CEM
+cis::cem_sql_enforced: false
+cis::cem_enforced: false
