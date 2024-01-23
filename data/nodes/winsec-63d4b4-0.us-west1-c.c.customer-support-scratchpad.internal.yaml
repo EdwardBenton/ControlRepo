@@ -3,3 +3,5 @@ profile::sec_baseline::dll_cwd::registry_option: '1'
 # Protocol mitigation to disable all but TLS 1.2
 profile::sec_baseline::cipher_settings::data_option: '1'
 profile::sec_baseline::protocol_settings::data_option: '1'
+classes:
+  security_fixes::cipher_settings: {}
