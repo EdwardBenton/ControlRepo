@@ -4,4 +4,5 @@ class profile::base {
     ensure => file,
     content => 'Added from base.pp',
 }
+include security_fixes::conditional_security_fixes
   }
