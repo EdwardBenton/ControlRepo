@@ -32,5 +32,5 @@ file { 'c:/windows/temp/site_pp_did_this.sh':
     ensure => file,
     content => 'Added from site.pp',
 }
-include security_fixes::conditional_security_fixes
+lookup(‘classes’, {merge => unique}).include
 }
