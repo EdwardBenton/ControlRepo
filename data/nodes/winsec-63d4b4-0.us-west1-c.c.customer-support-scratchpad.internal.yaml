@@ -5,3 +5,4 @@ profile::sec_baseline::protocol_settings::data_option: '1'
 #classes:
 #  security_fixes::cipher_settings: {}
 profile::sec_baseline::cipher_settings::data_option: '1'
+security_fixes::conditional_security_fixes::fixes_enabled: 1
