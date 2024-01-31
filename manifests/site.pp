@@ -28,9 +28,5 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-file { 'c:/windows/temp/site_pp_did_this.sh':
-    ensure => file,
-    content => 'Added from site.pp',
-}
 lookup('classes', {merge => unique}).include
 }
