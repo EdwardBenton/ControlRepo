@@ -28,3 +28,6 @@ mod 'puppetlabs/powershell', '5.0.0'
 mod 'puppetlabs/registry', '4.0.1'
 mod 'puppetlabs/pwshlib', '0.10.1'
 mod 'puppetlabs-peadm', '3.16.1'
+mod 'hieradata',
+  :git          => 'git@github.com:EdwardBenton/hieradata.git',
+  :install_path => 'hieradata'
