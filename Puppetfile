@@ -14,7 +14,6 @@ mod 'puppetlabs/concat',  '7.0.1'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 mod 'puppetlabs-patching_as_code', '1.1.7'
-mod 'reidmv-puppet_environment_facts', '1.0.0'
 # Puppet comply module
 mod 'puppetlabs/comply', '2.14.0'
  
