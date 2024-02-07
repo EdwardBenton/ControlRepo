@@ -1,4 +1,4 @@
 ---
 classes:
-  - firewall
+  - edbentonResourceDefaults::filetest
   - apache
