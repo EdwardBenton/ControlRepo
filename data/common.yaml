@@ -1,4 +1,4 @@
 ---
 classes:
-  - edbentonResourceDefaults::filetest
+  - edbentonresourcedefaults::filetest
   - apache

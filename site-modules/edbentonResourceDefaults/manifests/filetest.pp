@@ -4,7 +4,7 @@
 #
 # @example
 #   include edbentonResourceDefaults::filetest
-class edbentonResourceDefaults::filetest {
+class edbentonresourcedefaults::filetest {
   file { '/tmp/example_file':
     ensure => file,
     content => 'Testing is an enjoyable activity.',
