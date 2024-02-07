@@ -28,5 +28,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-lookup('classes', {merge => unique}).include
+#lookup('classes', {merge => unique}).include
+  include edbentonsetdefault::default
+  include edbentonresourcedefaults::filetest
 }
