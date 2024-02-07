@@ -6,6 +6,6 @@
 #   include edbentonsetdefault::default
 class edbentonsetdefault::default {
   File {
-    owner => 'nobody',
+    mode => '777',
   }
 }
