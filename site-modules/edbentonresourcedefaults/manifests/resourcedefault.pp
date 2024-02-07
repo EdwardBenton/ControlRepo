@@ -7,6 +7,6 @@
 class edbentonresourcedefaults::resourcedefault {
   File {
     mode => '777',
-    owner => 'root',
+    owner => 'nobody',
   }
 }
