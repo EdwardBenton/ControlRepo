@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-  file {
+  File {
     default:
     mode => '777',
     owner => 'nobody',
