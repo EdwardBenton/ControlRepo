@@ -9,4 +9,5 @@ class edbentonresourcedefaults::resourcedefault {
     mode => '777',
     owner => 'nobody',
   }
+  include edbentonresourcedefaults::filetest
 }
