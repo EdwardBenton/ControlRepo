@@ -10,5 +10,10 @@ class edbentonresourcedefaults::resourcedefault {
     mode => '777',
     owner => 'nobody',
   }
-  include edbentonresourcedefaults::filetest
+class edbentonresourcedefaults::filetest {
+  file { '/tmp/example_file':
+    ensure => file,
+    content => 'Testing is an enjoyable activity.',
+  }
+}
 }
