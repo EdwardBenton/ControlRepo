@@ -29,6 +29,6 @@ node default {
   # Example:
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
-  include edbentonsetdefault::default
+  include edbentonresourcedefaults::resourcedefault
   include edbentonresourcedefaults::filetest
 }

@@ -9,11 +9,5 @@ class edbentonresourcedefaults::resourcedefault {
     default:
     mode => '777',
     owner => 'nobody',
-  }
-class edbentonresourcedefaults::filetest {
-  file { '/tmp/example_file':
-    ensure => file,
-    content => 'Testing is an enjoyable activity.',
-  }
 }
 }

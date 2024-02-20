@@ -7,5 +7,6 @@
 class edbentonsetdefault::default {
   File {
     mode => '777',
+    owner => 'root',
   }
 }

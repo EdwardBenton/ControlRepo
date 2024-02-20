@@ -9,11 +9,4 @@ class edbentonresourcedefaults::filetest {
     ensure => file,
     content => 'Testing is an enjoyable activity.',
   }
-  class edbentonresourcedefaults::filetest {
-  file { '/tmp/example_file':
-    ensure => file,
-    content => 'Testing is an enjoyable activity.',
-  }
-}
-
 }
