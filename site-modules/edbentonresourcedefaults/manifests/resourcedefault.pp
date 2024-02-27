@@ -18,4 +18,9 @@ $myusers = {
     groups => ['developers', 'prosvc', 'release',],
   },
 }
+file { '/tmp/userfile.txt':
+  ensure  => file,
+  content => $myusers,
+}
+
 }
