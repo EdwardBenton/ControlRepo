@@ -5,9 +5,10 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-  File {
-    default:
-    mode => '777',
-    owner => 'nobody',
+# epp(<FILE REFERENCE>, [<PARAMETER HASH>])
+file { '/etc/birthday.conf':
+  ensure  => file,
+  content => epp('edbentonresourcedefaults/filetemplate.epp', {'name' => 'aaron', 'age' => "25"}),
+  # Loads /etc/puppetlabs/code/environments/production/modules/ntp/templates/ntp.conf.epp
 }
 }

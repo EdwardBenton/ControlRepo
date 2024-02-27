@@ -1,0 +1,8 @@
+```epp
+<%- |Hash[String, Data]| -%>
+{
+  "name": "<%= @data['name'] %>",
+  "age": <%= @data['age'] %>
+  "nationalinsurancenumber": <%= scope['sensitive::nationalinsurancenumber'] %>
+}
+```

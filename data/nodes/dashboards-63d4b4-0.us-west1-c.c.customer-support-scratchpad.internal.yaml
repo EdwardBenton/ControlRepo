@@ -1,1 +1,2 @@
-include puppet_operational_dashboards
+classes:
+  - puppet_operational_dashboards

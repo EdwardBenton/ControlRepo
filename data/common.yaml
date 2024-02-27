@@ -1,4 +1,6 @@
 ---
 classes:
   - edbentonsetdefault::default
-  - edbentonresourcedefaults::filetest
+
+sensitive::nationalinsurancenumber: >
+  <%= ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAaDJ5AmaQWYGDQO1KU83NT/Z+o/N7of8pKIhUDsYEgkmQkQdWHuxipmfeunWlmPii9cZpYTjj4Q7hPdslq045hU7kOFSwHhsaCNjymTgFi0bhotiABV477/QC8e0/xg/L/P8AtiFey6G9/Cvi1nG777txvl0oUDXC8J/0muC5wqTE+PzMprtcjagk06cUzJ9sGZtopC7XXVtvIxNrGuFtnE4YYX7Ua3TEjWNWhNj+B4tcXfHA1SA+DsG0bhcpyzutUjCU1sAo2jzJv1dVwe/ZsQ1X2y5uPSLcnUujd/KSCdOaUxyuv5VRpS+tbUa/dnJd0pljEMSgNtCokK9c0fSwszA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBV66+QuzjqyOP3S5r4j058gBA/4rPM0KoVfpHzt43qreYt].convert_to(String) %>
