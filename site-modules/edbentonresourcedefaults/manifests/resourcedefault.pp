@@ -8,18 +8,18 @@ class edbentonresourcedefaults::resourcedefault {
 # epp(<FILE REFERENCE>, [<PARAMETER HASH>])
 $myusers = {
   'nick' => {
-    uid    => lookup('nick_uid', Integer, "first", 1),
+    uid    => lookup('edbentonresourcedefault::nick_uid', Integer, "first", 2),
     gid    => 'allstaff',
     groups => ['developers', 'operations', 'release'],
   },
   'dan'  => {
-    uid    => lookup('dan_uid', Integer, "first", 1),
+    uid    => lookup('edbentonresourcedefault::dan_uid', Integer, "first", 2),
     gid    => 'allstaff',
     groups => ['developers', 'prosvc', 'release',],
   },
 }
 file { '/tmp/userfile.txt':
-  ensure  => file,
+ensure  => file,
 content => epp('edbentonresourcedefaults/myusers.epp', { users => $myusers }),
 }
 
