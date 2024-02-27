@@ -20,7 +20,7 @@ $myusers = {
 }
 file { '/tmp/userfile.txt':
   ensure  => file,
-  content => $myusers,
+content => epp('edbentonresourcedefaults/myusers.epp', $myusers),
 }
 
 }
