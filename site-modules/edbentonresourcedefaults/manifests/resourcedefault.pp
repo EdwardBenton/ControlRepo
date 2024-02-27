@@ -8,7 +8,7 @@ class edbentonresourcedefaults::resourcedefault {
 # epp(<FILE REFERENCE>, [<PARAMETER HASH>])
 $myusers = {
   'nick' => {
-    uid    => lookup('nick_uid'),
+    uid    => 3,
     gid    => 'allstaff',
     groups => ['developers', 'operations', 'release'],
   },
