@@ -29,6 +29,6 @@ file { '/tmp/userfile.txt':
 ensure  => file,
 content => epp('edbentonresourcedefaults/filetemplate.epp', $xml_params_epp),
 }
-
-}
 */
+}
+
