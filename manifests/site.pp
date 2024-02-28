@@ -31,8 +31,6 @@ node default {
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
   include edbentonresourcedefaults::filetest
-}
-node suse-63d4b4-0.us-west1-c.c.customer-support-scratchpad.internal {
   class {'::puppet_agent':
   package_version => '7.23.0',
 }
