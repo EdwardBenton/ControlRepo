@@ -4,6 +4,6 @@
 #
 # @example
 #   include edbentonResourceDefaults::upgradeagent
-class edbentonResourceDefaults::puppetagent {
+class edbentonResourceDefaults::upgradeagent {
   package_version => '7.23.0',
 }

@@ -31,4 +31,3 @@ content => epp('edbentonresourcedefaults/filetemplate.epp', $xml_params_epp),
 }
 */
 }
-
