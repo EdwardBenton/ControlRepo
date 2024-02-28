@@ -18,7 +18,7 @@ class edbentonresourcedefaults::resourcedefault {
     groups => ['developers', 'prosvc', 'release',],
   },
 }
-*/
+
 Struct[
   {
     passwd_ => Sensitive[String[1]],
@@ -31,3 +31,4 @@ content => epp('edbentonresourcedefaults/filetemplate.epp', $xml_params_epp),
 }
 
 }
+*/
