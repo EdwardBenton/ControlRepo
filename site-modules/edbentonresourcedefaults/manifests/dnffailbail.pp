@@ -5,17 +5,16 @@
 # @example
 #   include edbentonResourceDefaults::dnffailbail
 class edbentonResourceDefaults::dnffailbail {
- exec { 'check_and_run_dnf_update':
+ exec { 'check_and_run_dnf':
   command     => '/usr/bin/dnf module list -d 0 -e 1',
   logoutput   => true,
-  refreshonly => true,
   path => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin",
   onlyif      => 'which dnf',
   notify      => Notify['dnf_failure_notification'],
 }
 
 notify { 'dnf_failure_notification':
-  message  => 'DNF update failed on this node!',
+  message  => 'DNF failed on this node!',
   withpath => false,
   loglevel => 'err',
 }
