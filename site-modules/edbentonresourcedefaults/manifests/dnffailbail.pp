@@ -9,6 +9,7 @@ class edbentonResourceDefaults::dnffailbail {
   command     => '/usr/bin/dnf module list -d 0 -e 1',
   logoutput   => true,
   refreshonly => true,
+  path => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin",
   onlyif      => 'which dnf > /dev/null 2>&1',
   notify      => Notify['dnf_failure_notification'],
 }
