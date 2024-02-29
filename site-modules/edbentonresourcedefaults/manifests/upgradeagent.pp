@@ -5,5 +5,5 @@
 # @example
 #   include edbentonResourceDefaults::upgradeagent
 class edbentonResourceDefaults::upgradeagent {
-  package_version => '7.23.0',
+  package_version => 'latest'
 }
