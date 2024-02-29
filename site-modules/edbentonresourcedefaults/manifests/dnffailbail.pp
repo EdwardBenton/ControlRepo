@@ -10,7 +10,7 @@ class edbentonResourceDefaults::dnffailbail {
   logoutput   => true,
   refreshonly => true,
   path => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin",
-  onlyif      => 'which dnf > /dev/null 2>&1',
+  onlyif      => 'which dnf',
   notify      => Notify['dnf_failure_notification'],
 }
 
