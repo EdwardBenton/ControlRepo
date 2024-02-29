@@ -31,7 +31,6 @@ node default {
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
   include edbentonresourcedefaults::filetest
-  include edbentonResourceDefaults::upgradeagent
   class {'::puppet_agent':
   package_version => '7.23.0',
 }
