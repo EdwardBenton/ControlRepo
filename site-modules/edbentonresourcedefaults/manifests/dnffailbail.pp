@@ -9,7 +9,7 @@ class edbentonResourceDefaults::dnffailbail {
   command     => 'dnf update -y',
   logoutput   => true,
   refreshonly => true,
-  onlyif      => 'which dnf > /dev/null 2>&1',
+  onlyif      => '/usr/bin/which dnf > /dev/null 2>&1',
   notify      => Notify['dnf_failure_notification'],
 }
 
