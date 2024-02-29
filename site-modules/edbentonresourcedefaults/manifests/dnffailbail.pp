@@ -5,18 +5,17 @@
 # @example
 #   include edbentonResourceDefaults::dnffailbail
 class edbentonResourceDefaults::dnffailbail {
-  exec { 'run_dnf':
-  command     => 'dnf module list -d 0 -e 1',
+ exec { 'check_and_run_dnf_update':
+  command     => 'dnf update -y',
   logoutput   => true,
   refreshonly => true,
-  onlyif      => 'which dnf',
+  onlyif      => 'which dnf > /dev/null 2>&1',
   notify      => Notify['dnf_failure_notification'],
 }
 
 notify { 'dnf_failure_notification':
-  message => 'DNF module list failed on this node!',
+  message  => 'DNF update failed on this node!',
   withpath => false,
   loglevel => 'err',
 }
-
 }
