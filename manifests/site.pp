@@ -30,8 +30,5 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
-  include edbentonresourcedefaults::filetest
-  class {'::puppet_agent':
-  package_version => '7.23.0',
-}
+  include edbentonResourceDefaults::dnffailbail
 }
