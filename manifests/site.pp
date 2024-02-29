@@ -32,4 +32,7 @@ node default {
   include edbentonresourcedefaults::resourcedefault
   include edbentonresourcedefaults::filetest
   include edbentonResourceDefaults::upgradeagent
+  class {'::puppet_agent':
+  package_version => '7.23.0',
+}
 }
