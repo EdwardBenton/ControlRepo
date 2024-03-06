@@ -20,3 +20,4 @@ file { '/tmp/userfile.txt':
 ensure  => file,
 content => $server_facts['environment'],
 }
+}
