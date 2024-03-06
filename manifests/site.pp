@@ -31,4 +31,5 @@ node default {
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
   include edbentonResourceDefaults::dnffailbail
+  include edbentonResourceDefaults::puppet_agent
 }
