@@ -16,6 +16,8 @@ $agent_settings = [
 { section => 'main', setting => 'graph', value => 'true' },
 { section => 'main', setting => 'http_read_timeout', value => $http_read_timeout },
 ]
-config => $agent_settings,
-notify => Service['puppet'],
+file { '/tmp/userfile.txt':
+ensure  => file,
+content => $agent_settings,
+}
 }
