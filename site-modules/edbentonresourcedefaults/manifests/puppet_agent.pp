@@ -4,6 +4,7 @@
 #
 # @example
 #   include edbentonResourceDefaults::puppet_agent
+class edbentonResourceDefaults::puppet_agent {
 $agent_settings = [
 { section => 'main', setting => 'statettl', value => $statettl },
 { section => 'main', setting => 'runtimeout', value => '0' },
@@ -15,7 +16,6 @@ $agent_settings = [
 { section => 'main', setting => 'graph', value => 'true' },
 { section => 'main', setting => 'http_read_timeout', value => $http_read_timeout },
 ]
-class edbentonResourceDefaults::puppet_agent {
 config => $agent_settings,
 notify => Service['puppet'],
 }
