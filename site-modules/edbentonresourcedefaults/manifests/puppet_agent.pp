@@ -4,7 +4,7 @@
 #
 # @example
 #   include edbentonResourceDefaults::puppet_agent
-class edbentonResourceDefaults::puppet_agent {
+class edbentonresourcedefaults::puppet_agent {
 $agent_settings = [
 { section => 'main', setting => 'statettl', value => $statettl },
 { section => 'main', setting => 'runtimeout', value => '0' },
