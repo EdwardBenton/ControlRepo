@@ -30,9 +30,7 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
-  include edbentonResourceDefaults::dnffailbail
-  include edbentonResourceDefaults::puppet_agent
-  $agent_settings = [
+/* $agent_settings = [
 { section => 'main', setting => 'statettl', value => $statettl },
 { section => 'main', setting => 'runtimeout', value => '0' },
 { section => 'agent', setting => 'splay', value => 'true' },
@@ -48,4 +46,9 @@ class { 'puppet_agent':
 config => $agent_settings,
 notify => Service['puppet'],
 }
+}
+*/
+file { '/tmp/userfile.txt':
+ensure  => file,
+content => $server_facts['environment'],
 }
