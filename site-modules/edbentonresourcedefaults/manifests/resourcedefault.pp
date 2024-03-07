@@ -5,8 +5,22 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-file { '/tmp/langroup.txt':
-ensure  => file,
-content => 'The LAN group for this node is lookup('lanl_group')' ,
+$lanl_group = lookup('lanl_group', { 'default_value' => 'unset' })
+
+if $lanl_group == 'core_dev' {
+  file { '/tmp/test_file':
+    ensure  => file,
+    content => 'This server is in the core dev group',
+  }
+} elsif $lanl_group == 'blackbelt' {
+  file { '/tmp/test_file':
+    ensure  => file,
+    content => 'This server is in the BlackBelt dev group',
+  }
+} else {
+  file { '/tmp/test_file':
+    ensure  => file,
+    content => 'There is no LAN group set',
+  }
 }
 }
