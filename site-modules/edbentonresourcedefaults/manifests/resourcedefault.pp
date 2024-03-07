@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-file { '/tmp/userfile.txt':
+file { '/tmp/langroup.txt':
 ensure  => file,
 content => "The LAN group for this node is lookup('lanl_group')" ,
 }
