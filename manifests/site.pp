@@ -37,9 +37,3 @@ $agent_settings = [
 class { 'puppet_agent':
 config => $agent_settings,
 }
-
-file { '/tmp/userfile.txt':
-ensure  => file,
-content => $server_facts['environment'],
-}
-}
