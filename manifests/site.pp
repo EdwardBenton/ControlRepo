@@ -30,7 +30,7 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
   include edbentonresourcedefaults::resourcedefault
-/* $agent_settings = [
+$agent_settings = [
 { section => 'main', setting => 'statettl', value => $statettl },
 { section => 'main', setting => 'runtimeout', value => '0' },
 { section => 'agent', setting => 'splay', value => 'true' },
