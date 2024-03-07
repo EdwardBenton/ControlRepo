@@ -7,6 +7,6 @@
 class edbentonresourcedefaults::resourcedefault {
 file { '/tmp/langroup.txt':
 ensure  => file,
-content => "The LAN group for this node is lookup('lanl_group')" ,
+content => 'The LAN group for this node is lookup('lanl_group')' ,
 }
 }
