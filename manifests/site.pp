@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
-  include edbentonresourcedefaults::resourcedefault
+#  include edbentonresourcedefaults::resourcedefault
 $agent_settings = [
 { section => 'main', setting => 'statettl', value => $statettl },
 { section => 'main', setting => 'runtimeout', value => '0' },
@@ -46,7 +46,7 @@ class { 'puppet_agent':
 config => $agent_settings,
 notify => Service['puppet'],
 }
-*/
+
 file { '/tmp/userfile.txt':
 ensure  => file,
 content => $server_facts['environment'],
