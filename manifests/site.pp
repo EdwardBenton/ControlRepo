@@ -36,7 +36,6 @@ $agent_settings = [
 
 class { 'puppet_agent':
 config => $agent_settings,
-notify => Service['puppet'],
 }
 
 file { '/tmp/userfile.txt':
