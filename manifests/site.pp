@@ -37,3 +37,4 @@ $agent_settings = [
 class { 'puppet_agent':
 config => $agent_settings,
 }
+}
