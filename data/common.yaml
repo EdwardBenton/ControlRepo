@@ -6,6 +6,6 @@ ntp::servers:
   - 0.pool.ntp.org
 ---
 Ubuntu:
-  lanl_group: coredev
+  lanl_group: core_dev
 testfirewall:
   lanl_group: blackbelt
