@@ -4,3 +4,8 @@ classes:
 ntp::servers:
   - time.example.com
   - 0.pool.ntp.org
+---
+Ubuntu:
+  lanl_group: coredev
+testfirewall:
+  lanl_group: blackbelt

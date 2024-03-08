@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-$lanl_group = lookup('lanl_group', { 'default_value' => 'unset' })
+$lanl_group = lookup($::hostname, {'default_value' => 'default_lanl_group'}, 'yaml_data')
 
 if $lanl_group == 'core_dev' {
   file { '/tmp/test_file':
