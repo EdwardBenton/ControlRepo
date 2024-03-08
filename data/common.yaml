@@ -5,7 +5,7 @@ ntp::servers:
   - time.example.com
   - 0.pool.ntp.org
 ---
-Ubuntu:
+ubuntu-63d4b4-0.us-west1-c.c.customer-support-scratchpad.internal:
   lanl_group: core_dev
-testfirewall:
+testfirewall-63d4b4-0.us-west1-c.c.customer-support-scratchpad.internal:
   lanl_group: blackbelt
