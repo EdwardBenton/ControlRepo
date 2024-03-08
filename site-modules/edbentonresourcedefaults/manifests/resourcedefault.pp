@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-$lanl_group = lookup($::trusted['certname'] + '.lanl_group', { 'default_value' => 'default_lanl_group' })
+$lanl_group = lookup("${::trusted['certname']}.lanl_group", { 'default_value' => 'default_lanl_group' })
 
 if $lanl_group == 'core_dev' {
   file { '/tmp/test_file':
