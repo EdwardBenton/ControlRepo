@@ -1,10 +1,4 @@
 ---
-classes:
-  - edbentonsetdefault::default
-ntp::servers:
-  - time.example.com
-  - 0.pool.ntp.org
----
 ubuntu-63d4b4-0:
   lanl_group: core_dev
 testfirewall-63d4b4-0:
