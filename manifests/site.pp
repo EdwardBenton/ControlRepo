@@ -30,4 +30,5 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::resourcedefault
+include edbentonresourcedefaults::test_sensitive_data
 }
