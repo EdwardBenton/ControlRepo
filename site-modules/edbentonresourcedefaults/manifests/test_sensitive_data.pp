@@ -5,6 +5,6 @@
 # @example
 #   include edbentonResourceDefaults::test_sensitive_data
 class edbentonresourcedefaults::test_sensitive_data {
-$test_value = example_sensitive_function::should_to_s(Sensitive('test_value'))
+$test_value = edbentonresourcedefaults::example_sensitive_function::should_to_s(Sensitive('test_value'))
 notify { "Test value: ${test_value}": }
 }
