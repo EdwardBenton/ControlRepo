@@ -1,4 +1,4 @@
-Puppet::Functions.create_function(:example_sensitive_function) do
+Puppet::Functions.create_function(: 'example_sensitive_function') do
     dispatch :should_to_s do
       param 'Sensitive', :newvalue
     end
