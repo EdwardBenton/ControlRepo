@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
-#  include edbentonresourcedefaults::resourcedefault
+include edbentonresourcedefaults::resourcedefault
 $agent_settings = [
 { section => 'main', setting => 'environment', value => $server_facts['environment'] },
 ]
@@ -37,7 +37,4 @@ $agent_settings = [
 class { 'puppet_agent':
 config => $agent_settings,
 }
-}
-node pe-server-eb4f9c-0.us-west1-a.c.customer-support-scratchpad.internal {
-include edbentonresourcedefaults::resourcedefault
 }
