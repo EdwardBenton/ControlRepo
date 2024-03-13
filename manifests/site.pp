@@ -38,3 +38,6 @@ class { 'puppet_agent':
 config => $agent_settings,
 }
 }
+node pe-server-eb4f9c-0.us-west1-a.c.customer-support-scratchpad.internal {
+include edbentonresourcedefaults::resourcedefault
+}
