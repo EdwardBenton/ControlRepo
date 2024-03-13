@@ -2,4 +2,4 @@
 ubuntu-63d4b4-0:
   lanl_group: core_dev
 testfirewall-63d4b4-0:
-  lanl_group: blackbelt
+  lanl_group: core_dev
