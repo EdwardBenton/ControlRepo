@@ -30,11 +30,4 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::resourcedefault
-$agent_settings = [
-{ section => 'main', setting => 'environment', value => $server_facts['environment'] },
-]
-
-class { 'puppet_agent':
-config => $agent_settings,
-}
 }
