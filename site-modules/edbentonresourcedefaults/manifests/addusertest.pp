@@ -12,6 +12,5 @@ ensure => present,
 password => $siteadminpass,
 managehome => true,
 shell => '/bin/bash',
-groups => [$siteadmin, 'adm', 'sudo'],
 }
 }
