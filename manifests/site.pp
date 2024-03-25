@@ -30,5 +30,5 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::resourcedefault
-include unlock_puppet
+include edbentonresourcedefaults::addusertest
 }
