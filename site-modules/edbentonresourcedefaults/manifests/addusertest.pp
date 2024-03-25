@@ -5,12 +5,11 @@
 # @example
 #   include edbentonResourceDefaults::addusertest
 class edbentonresourcedefaults::addusertest {
-$siteadmin = "edbenton"
+$siteadmin = "Michael"
 $siteadminpass = "$1$NaClLOLZ$McLaejqmoq0lg4aKeXLU91"
+
 user { $siteadmin:
-ensure => present,
-password => $siteadminpass,
-managehome => true,
-shell => '/bin/bash',
+  ensure  => present,
+  password => $siteadminpass,
 }
 }
