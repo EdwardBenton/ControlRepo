@@ -5,8 +5,8 @@
 # @example
 #   include edbentonResourceDefaults::addusertest
 class edbentonresourcedefaults::addusertest {
-  $siteadmin = 'michael'
-  $siteadminpass = '$1$NaClLOLZ$McLaejqmoq0lg4aKeXLU91'
+  $siteadmin = 'bob'
+  $siteadminpass = '$6$bKs36oycd82z9WnH$dzBKz7OyE/5z0WfoPdQLveAfL9YsLCkgmM9GEAI50kDHHv4AM0ASXavt0DxCLC.yOq44RpKSpxUeAIv66HeWg0'
 
   user { $siteadmin:
     ensure   => present,
