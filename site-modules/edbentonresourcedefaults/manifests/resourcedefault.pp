@@ -5,22 +5,9 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-$lanl_group = lookup("${::trusted['hostname']}.lanl_group", { 'default_value' => 'default_lanl_group' })
+regisitry::value { 'puppettest':
 
-if $lanl_group == 'core_dev' {
-  file { '/tmp/test_file':
-    ensure  => file,
-    content => 'This server is in the core dev group',
+    key => 'HKLM\SOFTWARE\Puppet Labs\Puppet',
+    data => '1',
   }
-} elsif $lanl_group == 'blackbelt' {
-  file { '/tmp/test_file':
-    ensure  => file,
-    content => 'This server is in the BlackBelt dev group',
-  }
-} else {
-  file { '/tmp/test_file':
-    ensure  => file,
-    content => 'There is no LAN group set',
-  }
-}
 }
