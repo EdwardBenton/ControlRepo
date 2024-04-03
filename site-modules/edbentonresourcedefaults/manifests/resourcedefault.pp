@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::resourcedefault
 class edbentonresourcedefaults::resourcedefault {
-regisitry::value { 'puppettest':
+registry::value { 'puppettest':
 
     key => 'HKLM\SOFTWARE\Puppet Labs\Puppet',
     data => '1',
