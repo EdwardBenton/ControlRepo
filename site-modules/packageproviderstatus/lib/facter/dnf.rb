@@ -1,6 +1,7 @@
-Facter.add(:dnfavailable) do
-setcode do
-result = system('dnf --version > /dev/null 2>&1')
-puts result ? "true" : "false"
-end
-end
+Facter.add('dnfavailable') do
+    confine :kernel => 'Linux'
+    setcode do
+      result = Facter::Core::Execution.execute('dnf --version > /dev/null 2>&1', on_fail: false)
+      result ? 'true' : 'false'
+    end
+  end
