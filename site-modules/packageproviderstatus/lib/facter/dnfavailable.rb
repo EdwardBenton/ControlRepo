@@ -1,6 +1,7 @@
 Facter.add('dnfavailable') do
-    confine :kernel => 'Linux'
-    setcode do
-    Facter::Core::Execution.execute('dnf --version > /dev/null 2>&1', on_fail: false)
-    end
+  confine :osfamily => 'RedHat'
+  setcode do
+    Facter::Core::Execution.execute('dnf --version', on_fail: false)
+    $?.exitstatus == 0 ? true : false
   end
+end
