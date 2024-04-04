@@ -1,7 +1,7 @@
 Facter.add('dnfavailable') do
   confine :osfamily => 'RedHat'
   setcode do
-    Facter::Core::Execution.execute('dnf --version', on_fail: false)
-    $?.exitstatus == 0 ? true : false
+    dnf_path = Facter::Core::Execution.which('dnf')
+    dnf_path.nil? ? false : true
   end
 end
