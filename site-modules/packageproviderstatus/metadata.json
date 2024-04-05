@@ -2,9 +2,9 @@
   "name": "edbenton-packageproviderstatus",
   "version": "0.1.0",
   "author": "Ed Benton",
-  "summary": "",
+  "summary": "Custom facts which establish whether or not a particular package provider is available on a system",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "N/A",
   "dependencies": [
 
   ],
@@ -49,13 +49,6 @@
       "operatingsystem": "Fedora",
       "operatingsystemrelease": [
         "29"
-      ]
-    },
-    {
-      "operatingsystem": "windows",
-      "operatingsystemrelease": [
-        "2019",
-        "10"
       ]
     }
   ],
