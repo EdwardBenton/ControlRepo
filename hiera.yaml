@@ -2,9 +2,6 @@
 version: 5
 defaults:
   datadir: "data"
-  lookup_key: eyaml_lookup_key
-  options:
-    gpg_gnupghome: /etc/puppetlabs/enterprise/conf.d/gpg
 hierarchy:
   - name: "Secret data: per-node, per-datacenter, common"
     lookup_key: eyaml_lookup_key # eyaml backend
@@ -15,6 +12,8 @@ hierarchy:
     options:
       pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
       pkcs7_public_key:  /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
+      lookup_key: eyaml_lookup_key
+      gpg_gnupghome: /etc/puppetlabs/enterprise/conf.d/gpg
   - name: "Normal data"
     data_hash: yaml_data # Standard yaml backend
     paths:
