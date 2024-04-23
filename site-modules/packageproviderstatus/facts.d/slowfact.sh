@@ -1,2 +1,2 @@
 #!/bin/bash
-/bin/echo a very slow fact.... ; sleep 120
+echo slowfact="$(/bin/echo slowfact=a very slow fact.... ; sleep 120)"
