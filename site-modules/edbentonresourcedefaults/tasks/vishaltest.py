@@ -2,5 +2,5 @@
 
 import json
 import sys
-result = { "message": "String" }
+result = { "String" }
 json.dump(result, sys.stdout)
