@@ -12,9 +12,4 @@ class edbentonresourcedefaults::addusertest {
     ensure   => present,
     password => $siteadminpass,
   }
-
-}
-  notice('String')
-  exec { 'echo_string':
-  command => 'echo "String3"',
 }
