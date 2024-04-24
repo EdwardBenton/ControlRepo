@@ -1,4 +1,4 @@
-# puppet_task.py
+#!/usr/bin/env python
 
 import json
 
