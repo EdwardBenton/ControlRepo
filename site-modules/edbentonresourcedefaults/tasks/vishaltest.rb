@@ -2,7 +2,7 @@
 
 require 'json'
 
-task :example_task do
+task :vishaltest do
   string_output = "String"
   result = { key1: 'value1', key2: 'value2' }
 
