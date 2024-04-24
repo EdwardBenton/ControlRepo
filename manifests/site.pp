@@ -32,6 +32,6 @@ node default {
 include edbentonresourcedefaults::addusertest
 notify{"String": }
 exec { 'echo_string':
-  command => 'echo "String"',
+  command => '/bin/echo "String"',
 }
 }
