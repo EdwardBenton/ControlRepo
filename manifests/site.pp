@@ -30,5 +30,5 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::addusertest
-  notice("String")
+notice("String")
 }
