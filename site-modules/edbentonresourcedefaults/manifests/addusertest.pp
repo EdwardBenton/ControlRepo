@@ -12,4 +12,5 @@ class edbentonresourcedefaults::addusertest {
     ensure   => present,
     password => $siteadminpass,
   }
+  notice('String')
 }
