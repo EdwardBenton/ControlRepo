@@ -31,7 +31,4 @@ node default {
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::addusertest
   notice('String')
-  exec { 'echo_string':
-  command => 'echo "String3"',
-}
 }
