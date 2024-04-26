@@ -30,4 +30,8 @@ node default {
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
 include edbentonresourcedefaults::addusertest
+class { 'wsus_client':
+  server_url           => 'http://mynode-63d4b4-0.us-west1-c.c.customer-support-scratchpad.internal:8530',
+  enable_status_server => true,
+}
 }
