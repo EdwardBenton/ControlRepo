@@ -7,6 +7,16 @@
 class edbentonresourcedefaults::filetest {
   file { '/tmp/example_file':
     ensure => file,
-    content => 'Testing is an enjoyable activity.',
+    content => 'Some content used by installer',
   }
+
+exec { 'installerstuff':
+  path      => $::path,
+  command   => 'cat /tmp/example_file',
+}
+
+  file { '/tmp/example_file':
+    ensure => absent,
+  }
+
 }
