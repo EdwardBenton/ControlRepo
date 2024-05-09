@@ -5,18 +5,14 @@
 # @example
 #   include edbentonResourceDefaults::filetest
 class edbentonresourcedefaults::filetest {
-  file { '/tmp/example_file':
-    ensure => file,
-    content => 'Some content used by installer',
-  }
-
-exec { 'installerstuff':
-  path      => $::path,
-  command   => 'cat /tmp/example_file',
+  file { '/etc/test.txt':
+  ensure  => present,
+  content => "This is a notice",
+} ~> 
+notify { 'File is present':
+  message => 'The file /etc/test.txt has been created',
+} ~>
+file { '/etc/test.txt':
+  ensure => absent,
 }
-
-  file { '/tmp/example_file':
-    ensure => absent,
-  }
-
 }
