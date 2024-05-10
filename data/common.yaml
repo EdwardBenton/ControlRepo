@@ -3,3 +3,16 @@ ubuntu-63d4b4-0:
   lanl_group: core_dev
 testfirewall-63d4b4-0:
   lanl_group: blackbelt
+console: {
+  cache-whitelist: { 
+    "^/api/cm/facts": {
+      ttl: 3600
+    },
+    "^/api/cm/nodes\\??.*": {
+      ttl: 3600
+    },
+    "^/api/cm/node-counts\\??.*": {
+      ttl: 3600
+    }
+  }
+}
