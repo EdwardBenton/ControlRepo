@@ -10,3 +10,4 @@ notify { 'factcheck':
   name     => factcheck
   message  => "The data type of blockdevice_sda_size is: ${blockdevice_sda_size_type}"
 }
+}
