@@ -1,4 +1,4 @@
-forge 'https://forge.puppet.com'
+forge baseurl 'https://forgetest.123.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
