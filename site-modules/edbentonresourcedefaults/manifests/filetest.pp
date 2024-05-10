@@ -10,10 +10,8 @@ file { '/etc/test.txt':
   content => "This is a notice",
 } -> 
 notify { 'File is present':
-  message => 'The file /etc/test.txt has been created',
+  message => 'type()',
 } -> 
-file { '/etc/test.txt':
-  ensure => absent,
-}
-
+$blockdevice_sda_size_type = type($::blockdevice_sda_size)
+notice("The data type of blockdevice_sda_size is: ${blockdevice_sda_size_type}")
 }
