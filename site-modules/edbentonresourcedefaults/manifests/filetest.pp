@@ -6,5 +6,7 @@
 #   include edbentonResourceDefaults::filetest
 class edbentonresourcedefaults::filetest {
 $blockdevice_sda_size_type = type($::blockdevice_sda_size)
-notify("The data type of blockdevice_sda_size is: ${blockdevice_sda_size_type}")
+notify { 'factcheck':
+  name     => factcheck
+  message  => "The data type of blockdevice_sda_size is: ${blockdevice_sda_size_type}"
 }
