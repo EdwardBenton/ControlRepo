@@ -16,7 +16,4 @@ if $stdlib_log_deprecations {
 } else {
   notify { "STDLIB_LOG_DEPRECATIONS is unset": }
 }
-$stdlib_version = $facts['stdlib_version']
-notify { "Currently installed puppetlabs-stdlib version: ${stdlib_version}": }
-
 }
