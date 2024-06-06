@@ -5,9 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::filetest
 class edbentonresourcedefaults::filetest {
-$blockdevice_sda_size_type = type($::blockdevice_sda_size)
-notify { 'factcheck':
-  name     => 'factcheck',
-  message  => "The data type of blockdevice_sda_size is: ${blockdevice_sda_size_type}"
-}
+# revert change to check whether deprecate warnings are raised
+#$rnd_pwd = stdlib::seeded_rand_string(12, $facts['networking']['hostname'])
+$rnd_pwd = seeded_rand_string(12, $facts['networking']['hostname'])
 }
