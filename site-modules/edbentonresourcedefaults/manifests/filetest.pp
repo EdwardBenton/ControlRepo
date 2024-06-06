@@ -6,7 +6,7 @@
 #   include edbentonResourceDefaults::filetest
 class edbentonresourcedefaults::filetest {
 # revert change to check whether deprecate warnings are raised
-$randomer = seeded_rand_string(300, 'my_seed')
+$randomer = stdlib::seeded_rand_string(300, 'my_seed')
 notify { 'output':
 message => $randomer,
 }
