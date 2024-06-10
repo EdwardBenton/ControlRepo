@@ -1,9 +1,11 @@
-# This is a description for my plan
-plan adhoc::myplan(
-  # input parameters go here
-  TargetSpec $targets,
+plan equal_9_5::test (
+TargetSpec $targets = "localhost"
 ) {
-
-  # plan steps go here
-
+apply_prep($targets)
+apply($targets) {
+$randomer = seeded_rand_string(300, 'my_seed')
+notify { 'output':
+message => $randomer,
+}
+}
 }
