@@ -1,4 +1,4 @@
-plan equal_9_5::test (
+plan adhoc::testwarnings (
 TargetSpec $targets = "localhost"
 ) {
 apply_prep($targets)
