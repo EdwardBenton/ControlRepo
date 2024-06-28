@@ -20,3 +20,4 @@ puppet_enterprise::profile::console::cache::cache_allowlist:
     'ttl': 1800
 puppet_enterprise::profile::console::cache::cache_size_bytes: 268435456
 STDLIB_LOG_DEPRECATIONS: true
+puppet_enterprise::profile::master::versioned_deploys: true
