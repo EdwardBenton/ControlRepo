@@ -28,6 +28,4 @@ node default {
   # Example:
   #   class { 'my_class': }
 #lookup('classes', {merge => unique}).include
-Exec { environment => [ "STDLIB_LOG_DEPRECATIONS=true" ] }
-include edbentonresourcedefaults::filetest
 }
