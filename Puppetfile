@@ -4,8 +4,7 @@ forge 'https://forge.puppet.com'
 # Versions should be updated to be the latest at the time you start
 mod 'puppetlabs/concat',  '9.0.2'
 
-# Modules from Git
-# Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
+# Modules from Gitpuppet.comthub.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  commit: '1b6f89afdde0df7f9433a163d5c4b5328eac5779'
@@ -15,4 +14,5 @@ mod 'puppetlabs/concat',  '9.0.2'
 #  branch: 'docs_experiment'
 mod 'puppetlabs/ruby_task_helper', '0.6.0'
 mod 'puppetlabs/stdlib', '9.5.0'
+mod 'puppetlabs/apt', '7.6.0'
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
