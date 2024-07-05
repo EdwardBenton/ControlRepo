@@ -10,5 +10,7 @@ $randomer = seeded_rand_string(300, 'my_seed')
 notify { 'output':
 message => $randomer,
 }
+$stdlib_version = $::stdlibversion
+notify { "The version of stdlib module currently in use is: ${stdlib_version}": }
 }
 #$rnd_pwd2 = seeded_rand_string(12, $facts['networking']['hostname'])
