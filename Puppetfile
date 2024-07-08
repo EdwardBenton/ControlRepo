@@ -13,6 +13,6 @@ mod 'puppetlabs/concat',  '9.0.2'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 mod 'puppetlabs/ruby_task_helper', '0.6.0'
-mod 'puppetlabs/stdlib', '9.5.0'
+mod 'puppetlabs/stdlib', '6.5.0'
 mod 'puppetlabs/apt', '7.6.0'
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
