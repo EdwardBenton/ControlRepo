@@ -10,4 +10,5 @@ $randomer = seeded_rand_string(300, 'my_seed')
 notify { 'output':
 message => $randomer,
 }
+}
 #$rnd_pwd2 = seeded_rand_string(12, $facts['networking']['hostname'])
