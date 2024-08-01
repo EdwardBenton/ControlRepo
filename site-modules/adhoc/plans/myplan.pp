@@ -1,5 +1,5 @@
 plan adhoc::testwarnings (
-TargetSpec $targets = "localhost"
+TargetSpec $targets = 'localhost'
 ) {
 apply_prep($targets)
 apply($targets) {

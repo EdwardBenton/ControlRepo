@@ -11,39 +11,39 @@ ensure => present,
 }
 -> registry_value { 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto': # lint:ignore:140chars
 ensure => present,
-type => dword,
-data => 1,
+type   => dword,
+data   => 1,
 }
 registry_key { 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319':
 ensure => present,
 }
 -> registry_value { 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319\SchUseStrongCrypto': # lint:ignore:140chars
 ensure => present,
-type => dword,
-data => 1,
+type   => dword,
+data   => 1,
 }
 registry_key { 'HKLM:\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002':
-ensure => present,
+ensure       => present,
 purge_values => true, # used here to be sure that unsecure suites previously on the node are no longer present
 }
 #sets desired cipher suites. Purge_values says to only use what this list supplies
 -> registry::value { 'NCRYPT_SCHANNEL_INTERFACE':
-key => 'HKLM:\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002',
+key   => 'HKLM:\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002',
 value => '(default)',
-data => 'NCRYPT_SCHANNEL_INTERFACE',
+data  => 'NCRYPT_SCHANNEL_INTERFACE',
 }
 -> registry_value { 'HKLM:\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002\Functions':
 ensure => present,
-type => array,
-data => ['TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384','TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256','TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384','TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256'], # lint:ignore:140chars
+type   => array,
+data   => ['TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384','TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256','TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384','TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256'], # lint:ignore:140chars
 }
 -> registry_value { 'HKLM:\SYSTEM\CurrentControlSet\Control\Cryptography\Configuration\Local\SSL\00010002\EccCurves': # lint:ignore:140chars
 ensure => present,
-type => array,
-data => ['secP384r1','secP521r1','secP256r1','secP224r1'],
+type   => array,
+data   => ['secP384r1','secP521r1','secP256r1','secP224r1'],
 }
 file { 'c:/windows/temp/cert_convert.sh':
-    ensure => file,
+    ensure  => file,
     content => 'Test',
 }
 }

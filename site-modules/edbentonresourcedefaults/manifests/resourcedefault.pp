@@ -7,7 +7,7 @@
 class edbentonresourcedefaults::resourcedefault {
 registry::value { 'puppettest':
 
-    key => 'HKLM\SOFTWARE\Puppet Labs\Puppet',
+    key  => 'HKLM\SOFTWARE\Puppet Labs\Puppet',
     data => '1',
   }
 }

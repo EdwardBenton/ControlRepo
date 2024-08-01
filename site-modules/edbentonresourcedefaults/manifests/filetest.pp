@@ -10,5 +10,11 @@ $randomer = seeded_rand_string(300, 'my_seed')
 notify { 'output':
 message => $randomer,
 }
+
+file { '/tmp/testfile}':
+ensure => file,
+owner  => 'root',
+group  => 'root',
+mode   => '0644',
 }
 #$rnd_pwd2 = seeded_rand_string(12, $facts['networking']['hostname'])
