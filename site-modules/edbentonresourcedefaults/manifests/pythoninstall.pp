@@ -5,7 +5,7 @@
 # @example
 #   include edbentonResourceDefaults::pythoninstall
 class edbentonresourcedefaults::pythoninstall {
-  package { 'python3':
+  package { 'python36':
   ensure => 'latest',
 }
 }
