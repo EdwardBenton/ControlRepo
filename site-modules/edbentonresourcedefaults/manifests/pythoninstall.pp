@@ -5,7 +5,12 @@
 # @example
 #   include edbentonResourceDefaults::pythoninstall
 class edbentonresourcedefaults::pythoninstall {
-  package { 'python36':
-  ensure => 'latest',
+python::pip { 'requests' :
+  ensure        => 'latest',
+  pkgname       => 'requests',
+  pip_provider  => 'pip3',
+  virtualenv    => '/var/www/project1',
+  owner         => 'root',
+  timeout       => 1800
 }
 }
