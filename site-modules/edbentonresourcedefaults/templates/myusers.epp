@@ -1,7 +1,0 @@
-<%- | $users | -%>
-<% $users.each |$username, $details| { -%>
-<%= $username %>:
-  uid: <%= $details['uid'] %>
-  gid: <%= $details['gid'] %>
-  home: <%= $details['home'] %>
-<% } -%>
