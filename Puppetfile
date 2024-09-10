@@ -18,6 +18,6 @@ mod 'puppetlabs/apt', '7.6.0'
 mod 'puppet-python', '7.3.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
 mod 'edbentonresourcedefaults',
-  :git => 'git@ssh.dev.azure.com:v3/edbentonpuppet/puppet/puppet',
+  :git => 'git@ssh.dev.azure.com:v3/edbentonpuppet/puppet/puppet/edbentonresourcedefaults',
   :branch => :control_branch
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
