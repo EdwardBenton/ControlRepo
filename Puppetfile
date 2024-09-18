@@ -17,7 +17,7 @@ mod 'puppetlabs/stdlib', '6.5.0'
 mod 'puppetlabs/apt', '7.6.0'
 mod 'puppet-python', '7.3.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
-mod 'edbentonazuremod',
-  :git => 'git@ssh.dev.azure.com:v3/edbentonpuppet/puppet/edbentonazuremod',
-  :branch => :control_branch
+#mod 'edbentonazuremod',
+#  :git => 'git@ssh.dev.azure.com:v3/edbentonpuppet/puppet/edbentonazuremod',
+#  :branch => :control_branch
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
