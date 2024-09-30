@@ -5,8 +5,6 @@
 # @example
 #   include edbentonsetdefault::default
 class edbentonsetdefault::default {
-  File {
-    mode => '777',
-    owner => 'root',
-  }
+$my_ip = $::ipaddress
+notify {"hello world $my_ip":}
 }
