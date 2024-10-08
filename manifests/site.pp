@@ -30,4 +30,5 @@ node default {
 #lookup('classes', {merge => unique}).include
 #include edbentonazuremod::test
 include edbentonsetdefault::default
+include puppet_agent::configure
 }
