@@ -13,11 +13,13 @@ mod 'puppetlabs/concat',  '9.0.2'
 #  git:    'https://github.com/puppetlabs/puppetlabs-apache',
 #  branch: 'docs_experiment'
 mod 'puppetlabs/ruby_task_helper', '0.6.0'
-mod 'puppetlabs/stdlib', '6.5.0'
-mod 'puppetlabs/apt', '7.6.0'
+mod 'puppetlabs/stdlib', '9.0.0'
+mod 'puppetlabs/apt', '9.1.0'
+mod 'puppetlabs/facts', '1.6.0'
 mod 'puppet-python', '7.5.0'
 mod 'puppetlabs-cd4pe_jobs', '1.7.0'
 mod 'puppetlabs-puppet_agent', '4.21.0'
+mod 'puppetlabs-inifile', '6.1.1'
 #mod 'edbentonazuremod',
 #  :git => 'git@ssh.dev.azure.com:v3/edbentonpuppet/puppet/edbentonazuremod',
 #  :branch => :control_branch
