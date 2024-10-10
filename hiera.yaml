@@ -19,6 +19,6 @@ hierarchy:
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - "location/%{facts.whereami}/%{facts.group}.yaml"
-      - "groups/%{facts.group}.yaml"
+      - "domains/%{facts.domain}.yaml"
       - "os/%{facts.os.family}.yaml"
       - "common.yaml"
