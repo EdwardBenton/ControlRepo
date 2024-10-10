@@ -1,0 +1,2 @@
+puppet_agent::config:
+- { section: agent, setting: include_legacy_facts, value: 'false' }
