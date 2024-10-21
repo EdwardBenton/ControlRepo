@@ -30,12 +30,8 @@ node default {
 #lookup('classes', {merge => unique}).include
 #include edbentonazuremod::test
 include puppet_agent
-  file { '/root/test_eyaml.txt':
-    ensure  => 'file',
-    content => lookup('test_eyaml_file_contents'),
-  }
 
-  service { 'puppet':
+service { 'puppet':
     ensure  => 'running',
     enable  => true,
     provider => 'windows',
