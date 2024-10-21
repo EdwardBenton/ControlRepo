@@ -34,4 +34,12 @@ include puppet_agent
     ensure  => 'file',
     content => lookup('test_eyaml_file_contents'),
   }
+class puppet_service {
+  service { 'puppet':
+    ensure  => 'running',
+    enable  => true,
+    provider => 'windows',
+    start   => 'delayed-auto',
+  }
+}
 }
