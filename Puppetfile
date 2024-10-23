@@ -21,7 +21,7 @@ mod 'puppetlabs-cd4pe_jobs', '1.7.0'
 mod 'puppetlabs-puppet_agent', '4.21.0'
 mod 'puppetlabs-inifile', '6.1.1'
 mod 'puppet-hiera', '6.0.0'
-mod 'puppet-enterprise-modules',
+mod 'entmod',
   :git => 'git@github.com:EdwardBenton/puppet-enterprise-modules.git',
   :branch => 'main'
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
