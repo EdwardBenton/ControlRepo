@@ -23,5 +23,5 @@ mod 'puppetlabs-inifile', '6.1.1'
 mod 'puppet-hiera', '6.0.0'
 mod 'puppet-enterprise-modules',
   :git => 'git@github.com:EdwardBenton/puppet-enterprise-modules.git',
-  :branch => main
+  :branch => 'main'
 #mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
